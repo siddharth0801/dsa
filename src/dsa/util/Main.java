@@ -120,6 +120,13 @@ public class Main {
 		System.out.println();
 		ng.Dfs(0);
 		
+//		Bubble Sort
+		
+		System.out.println("\nSorting Algorithms..");
+		int[] arrayB = {5,1,4,2,8};
+		sortingTechniques srt = new sortingTechniques();
+		srt.bubbleSort(arrayB);
+		
 	}
 
 }
