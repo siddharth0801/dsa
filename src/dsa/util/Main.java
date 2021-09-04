@@ -119,14 +119,42 @@ public class Main {
 		ng.Bfs(1);
 		System.out.println();
 		ng.Dfs(0);
-		
-//		Bubble Sort
-		
-		System.out.println("\nSorting Algorithms..");
-		int[] arrayB = {5,1,4,2,8};
+//		Sorting
 		sortingTechniques srt = new sortingTechniques();
-		srt.bubbleSort(arrayB);
+//		Bubble Sort
+		System.out.println("\nSorting Algorithms..");
+		int[] arrayA = {10,4,8,5,9,12,3,1};
+		srt.bubbleSort(arrayA);
 		
+//		Merge Sort
+		int[] arrayB = {10,4,8,5,9,12,3,1,15};
+		srt.mergeSort(arrayB, 0, arrayB.length-1);
+		srt.display(arrayB);
+		
+//		Quick Sort
+		int[] arrayC = {10,4,8,5,6,7,9,12,3,1};
+		srt.quickSort(arrayC, 0, arrayC.length-1);
+		srt.display(arrayC);
+		
+//		Heap Sort
+		int[] arrayD = {87,45,89,55,12,4,6,32};
+		srt.heapSort(arrayD);
+		srt.display(arrayD);
+		
+//		Insertion Sort
+		int[] arrayE = {14,2,6,9,4,7};
+		srt.insertionSort(arrayE);
+		srt.display(arrayE);
+		
+//		Selection Sort
+		int[] arrayF = {10,4,8,5,2,3,1};
+		srt.selectSort(arrayF);
+		srt.display(arrayF);
+		
+//		Binary Search
+		searchAlgorithms search = new searchAlgorithms();
+		System.out.println();
+		search.binarySearch(arrayD, 0, arrayD.length-1, 55);
 	}
 
 }
